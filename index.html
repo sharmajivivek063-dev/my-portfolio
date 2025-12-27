@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal_Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-------------- <li><a href="#">Services</a></li> -----------> 
+                    <!------------- <li><a href="#">Portfolio</a></li> ------------>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-list" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,I'm <span>Vivek</span> <br>From Hisar(Haryana)</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am a final-year Electronics and Computer Engineering student with a strong foundation in programming (Python, C++), data
+ structures, and web development. I have hands-on experience in embedded systems and PCB design, and I have successfully
+ designed and built an e-learning platform (LEARNANCE),real time interactive Dashboard cum Resume(SKILLSCAPE) as part of a project.
+ <br><br>
+  My key strengths include problem-solving, teamwork, and
+ a continuous learning attitude. I am seeking a challenging role in software development or embedded systems where I can apply my
+ technical skills, contribute meaningfully, and grow professionally.
+ <br><br>
+I have Key Expertise in skills like Python ,C++, web development ,data structure,sql,Embedded Systems , PCB Design Problem Solving Team Collaboration Git &
+ GitHub
+</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('eductaion')">Eductaion</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Developer</span><br>Designing Websites</li>
+                            <li><span>Backand Developer</span><br>Managing Websites</li>
+                            <li><span>SQL</span><br>Managing Database</li>
+                        </ul>
+                    </div>
+<!-------------------------------projects----------------------------------->
+                    <div class="tab-contents" id="project">
+                        <ul>
+                            <li><span>Frontend Developer</span><br>Designing Websites</li>
+                            <li><span>Backand Developer</span><br>Managing Websites</li>
+                            <li><span>SQL</span><br>Managing Database</li>
+                        </ul>
+                    </div>
+<!-----------------------------------Education------------------->
+                    <div class="tab-contents" id="eductaion">
+                        <ul>
+                            <li><span>📌 B.Tech — Electronics & Computer Engineering</span><br>J.C Bose University of Science & Technology, YMCA, Faridabad
+                                <br>
+                             CGPA: 6.53 / 10</li>
+                            <li><span>📌 12th — Science (HBSE)</span><br>Baba Uddel Dev Sr. Sec. School, Bhani Maharajpur, Rohtak <br>
+                            Percentage: 95 / 100</li>
+                            <li><span>📌 10th — CBSE</span><br>Baba Uddel Dev Sr. Sec. School, Bhani Maharajpur, Rohtak <br>
+                            Percentage: 82.80 / 100 </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------projects------------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Learnance</h2>
+                    <p> Learnance is a full-stack e-learning web application that facilitates one-on-one tutoring. The backend is built on a Node.js and
+ Express.js framework with a MongoDB database for user and teacher data management. User authentication is handled via a RESTful
+ API, which also serves as the communication layer for connecting students and teachers. The frontend provides a user-friendly
+ interface for browsing teacher profiles and scheduling sessions. The platform's scalable architecture is designed to handle a growing
+ user base and expand its features, such as real-time communication tools and payment gateways.</p>
+                    <a href="https://github.com/gnitin07/learnance" target="_blank" rel="noopener noreferrer">learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h2>Skillscape</h2>
+                    <p>The Resume Dashboard Builder is a full-stack web application designed to create dynamic, data-driven resumes. Built with React (Vite),
+ Tailwind CSS, and Node.js (Express), it enables users to input personal, educational, and professional details through an intuitive
+ interface. The backend integrates with MongoDB Atlas to securely store data, while interactive charts and analytics visualize career
+ insights using Recharts. The platform also allows exporting resumes and dashboards as downloadable PDFs, providing both aesthetic
+ and functional value. This project demonstrates expertise in MERN stack development, responsive UI design, RESTful APIs, and real
+time data visualization for professional portfolio management.</p>
+                    <a href="https://github.com/gnitin07/resume-dashboard" target="_blank" rel="noopener noreferrer">learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>some</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure debitis voluptas excepturi aliquam accusantium unde eos expedita dolorum voluptatibus veniam facere pariatur rem quidem impedit, quaerat velit praesentium magni! Dolores obcaecati similique officiis sit mollitia ipsa perferendis illum recusandae ducimus voluptates, porro tenetur vero doloribus asperiores, earum quaerat. A.</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------Contact-------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-message"></i>vivekvatsg@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9350749728</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/vivek.vats.731135" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/v1vek_vats?igsh=MXVla2hsa2l0dDV1dA==" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/vivek-vats-692984286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/sharmaji_v84666?t=TRTriaNf_0tp2brC0vSMgw&s=08" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="images/New_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
